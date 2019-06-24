@@ -54,6 +54,7 @@ body {
     position: relative;
     top: 1em;
     left: 1em;
+    cursor: pointer;
 }
 
 .board-piece:hover{
