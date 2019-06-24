@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+    --primary-color: #003699;
+    --dark-color: #333333;
+    --light-color: #f4f4f4;
+    --lose-color: #dc3545;
+    --win-color: #28a745;
+    --modal-duration: 1s;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background:white;
+    color: black;
+}   
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+}
+
+.board{
+    display: grid;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    grid-template-columns: 12em 12em 12em;
+    width: 36em;
+}
+
+.board-item{
+    width: 12em;
+    height: 12em;
+    border: 1px solid black;
+}
+
+.board-piece{
+    width: 10em;
+    height: 10em;
+    position: relative;
+    top: 1em;
+    left: 1em;
+}
+
+.board-piece:hover{
+    background: rgb(157, 215, 253);
+    border: none;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+#item1,#item2,#item3{
+    border-top: none;
+}
+
+#item7,#item8,#item9{
+    border-bottom: none;
+}
+
+#item1,#item4,#item7{
+    border-left: none;
+}
+
+#item3,#item6,#item9{
+    border-right: none;
+}
+
