@@ -52,14 +52,14 @@ function playTurn(e){
     
     if(turn === X_TURN){
         if(document.getElementById(e.target.id)!=null)
-            document.getElementById(e.target.id).innerHTML = '<i class="fas fa-times fa-10x"></i>';
+            document.getElementById(e.target.id).innerHTML = '<i class="fas fa-times"></i>';
         piecesArray[rowIndex][colIndex] = 'X';
         turn = O_TURN;
         playerTurn.innerHTML = `O's Turn`;
     }
     else if(turn === O_TURN){
         if(document.getElementById(e.target.id)!=null)
-            document.getElementById(e.target.id).innerHTML = '<i class="far fa-circle fa-8x"></i>';
+            document.getElementById(e.target.id).innerHTML = '<i class="far fa-circle"></i>';
         piecesArray[rowIndex][colIndex] = 'O';
         turn = X_TURN;
         playerTurn.innerHTML = `X's Turn`;
@@ -122,6 +122,7 @@ function restartGame(e){
         boardPieces.forEach(function(piece){
         piece.innerHTML = ``;
         });
+        turn = X_TURN;
     }
 }
 

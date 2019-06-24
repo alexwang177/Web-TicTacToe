@@ -84,7 +84,40 @@ body {
 i{
     margin: 0 auto;
     vertical-align: middle;
+
 }
 
+.fas{
+    font-size: 10em;
+}
+
+.far {
+    font-size: 8em;
+}
+
+@media(max-width: 700px){
+    .board{
+        grid-template-columns: 8em 8em 8em;
+        width: 24em;
+    }
+    
+    .board-item{
+        width: 8em;
+        height: 8em;
+    }
+    
+    .board-piece{
+        width: 6em;
+        height: 6em;
+        top: 1em;
+        left: 1em;
+        line-height: 6em;
+    }
+    
+    .fas, .far{
+        font-size: 3em;
+    }
+  
+}
 
 
