@@ -123,6 +123,7 @@ function restartGame(e){
         piece.innerHTML = ``;
         });
         turn = X_TURN;
+        playerTurn.innerHTML = `X's Turn`;
     }
 }
 
