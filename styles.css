@@ -55,6 +55,7 @@ body {
     top: 1em;
     left: 1em;
     cursor: pointer;
+    line-height: 10em;
 }
 
 .board-piece:hover{
@@ -79,4 +80,11 @@ body {
 #item3,#item6,#item9{
     border-right: none;
 }
+
+i{
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+
 
